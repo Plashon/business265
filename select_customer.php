@@ -8,5 +8,6 @@
             <input type="text" placeholder="Enter Customer ID" name="CustomerID">
             <br> <br>
         </form>
+        <input type="submit">
     </body>
 </html>

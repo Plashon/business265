@@ -8,5 +8,6 @@
             <input type="text" placeholder="Enter Country Code" name="CountryCode">
             <br> <br>
         </form>
+        <input type="submit">
     </body>
 </html>

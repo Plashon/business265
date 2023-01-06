@@ -23,17 +23,21 @@ $stmt->execute();
 ?>
  
   <tr>
-  <td>
+ 
+    
+    <td>   <div align="center"> <?php echo $result["CountryCode"]; ?>        </td>
+
+    <td>
       <!--อย่าเว้นวรรค เวลาลิ้งค์ ไอสัสสสสสสสสสสสส--> 
       <!--อย่าเว้นวรรค เวลาลิ้งค์ ไอสัสสสสสสสสสสสส--> 
-        <a href="Detail2.php?CountryCode=<?php echo $result["CountryCode"]; ?>">
-                                        <?php echo $result["CountryCode"]; ?>    
+        <a href="Detail2.php?CountryName=<?php echo $result["CountryName"]; ?>">
+                                        <?php echo $result["CountryName"]; ?>    
         </a>   
         <!--อย่าเว้นวรรค เวลาลิ้งค์ ไอสัสสสสสสสสสสสส-->  
         <!--อย่าเว้นวรรค เวลาลิ้งค์ ไอสัสสสสสสสสสสสส--> 
     </td>
-    
-    <td>   <div align="center"> <?php echo $result["CountryName"]; ?>        </td>
+
+   
 
    
     

@@ -3,14 +3,14 @@
     </head>
     <body>
         <?php
-        if (isset($_GET["CountryCode"]))
+        if (isset($_GET["CountryName"]))
         {
-            $strCountryCode = $_GET["CountryCode"];
-            echo  $strCountryCode;
+            $strCountryName = $_GET["CountryName"];
+            echo  $strCountryName;
         }
         require "connect.php";
-        $sql ="SELECT * FROM country WHERE CountryCode = ?";
-        $params = array($strCountryCode);
+        $sql ="SELECT * FROM country WHERE CountryName = ?";
+        $params = array($strCountryName);
         $stmt = $conn->prepare($sql);
        $stmt->execute($params);
         $result = $stmt->fetch(PDO::FETCH_ASSOC);

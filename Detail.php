@@ -15,7 +15,7 @@
        $stmt->execute($params);
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
         ?>
-
+  
 <!-- Detail  -->
     <table width="300" border="1">
   <tr>

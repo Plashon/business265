@@ -4,7 +4,7 @@
 <body>
 <?php
 require "connect.php";
-$sql = "SELECT customer.CustomerID, customer.Name , customer.Birthdate,customer.Email,country.CountryName,customer.OutstandingDebt  
+$sql = "SELECT *
         FROM customer,country
         WHERE customer.CountryCode = country.CountryCode";
  
@@ -29,9 +29,13 @@ $stmt->execute();
  
   <tr>
     <td>
-        <a href="detail.php?CustomerID = <?php echo $result["CustomerID"]; ?>">
+      <!--อย่าเว้นวรรค  ไอสัสสสสสสสสสสสส--> 
+      <!--อย่าเว้นวรรค  ไอสัสสสสสสสสสสสส--> 
+        <a href="Detail.php?CustomerID=<?php echo $result["CustomerID"]; ?>">
                                         <?php echo $result["CustomerID"]; ?>    
-        </a>    
+        </a>   
+        <!--อย่าเว้นวรรค  ไอสัสสสสสสสสสสสส-->  
+        <!--อย่าเว้นวรรค  ไอสัสสสสสสสสสสสส--> 
     </td>
     <td>    <?php echo $result["Name"]; ?>              </td>
     <td>    <?php echo $result["Birthdate"]; ?>         </td>

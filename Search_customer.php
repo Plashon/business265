@@ -4,10 +4,11 @@
     </head>
     <body>
         <h1>Test SQL injection</h1>
-        <form action="select_injection.php" method="get">
+        <form action="Search_injection.php" method="get">
             <input type="text" placeholder="Enter Customer ID" name="CustomerID">
             <br> <br>
+            <input type="submit">
         </form>
-        <input type="submit">
+        
     </body>
 </html>

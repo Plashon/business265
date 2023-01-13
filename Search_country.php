@@ -4,10 +4,11 @@
     </head>
     <body>
         <h1>Test SQL injection</h1>
-        <form action="select_country_injection.php" method="get">
-            <input type="text" placeholder="Enter Country Code" name="CountryCode">
+        <form action="Search_country_injection.php" method="get">
+            <input type="text" placeholder="Enter Country Name" name="CountryName">
             <br> <br>
+            <input type="submit">
         </form>
-        <input type="submit">
+        
     </body>
 </html>

@@ -11,10 +11,10 @@ $stmt = $conn->prepare($sql);
 $stmt->execute();
 ?>
  
-<table width="200" border="1">
+<table width="300" border="1">
   <tr>
     <th width="90"> <div align="center">รหัสประเทศ </div></th>
-    <th width="20"> <div align="center">ชื่อประเทศ</div></th>
+    <th width="100"> <div align="center">ชื่อประเทศ</div></th>
 
   </tr>
  
